@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopp.schedulingapp.FormReportLocalCustomers">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="460.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="127.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="292.0" minHeight="10.0" prefHeight="268.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnReportLocalCustomersMain" mnemonicParsing="false" onAction="#reportLocalCustomersOpenMain" prefHeight="38.0" prefWidth="85.0" text="Back to Main" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Button>
+            <Label text="Customers by Country" GridPane.halignment="CENTER" />
+            <TableView fx:id="tblReportLocalCustomers" prefHeight="270.0" prefWidth="477.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="colReportLocalCustomersCustID" editable="false" prefWidth="68.20001065731049" sortable="false" text="Cust ID" />
+                <TableColumn fx:id="colReportLocalCustomersName" editable="false" prefWidth="108.59998321533203" sortable="false" text="Name" />
+                  <TableColumn fx:id="colReportLocalCustomersCountry" editable="false" prefWidth="101.60000610351562" sortable="false" text="Country" />
+              </columns>
+               <GridPane.margin>
+                  <Insets left="90.0" right="90.0" />
+               </GridPane.margin>
+            </TableView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

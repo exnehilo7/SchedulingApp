@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="241.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopp.schedulingapp.FormLogin">
+   <children>
+      <GridPane layoutX="-2.0" layoutY="-1.0" prefHeight="242.0" prefWidth="478.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="139.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="75.39999999999998" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="170.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="71.2" minHeight="10.0" prefHeight="64.39999618530274" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.4" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.39999999999999" minHeight="8.0" prefHeight="32.000000000000014" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="104.4" minHeight="10.0" prefHeight="36.400000000000006" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="107.4" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblLogin" text="Login" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+            <Label fx:id="lblLoginUN" text="User Name:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lblLoginPW" text="Password:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lblLoginUNError" text="     " GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lblLoginPWError" text="      " GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginToApp" text="Login" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label fx:id="lblLoginLoc" text="User's location (zone ID)" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+            <TextField fx:id="txtLoginUN" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtLoginPW" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnLoginExitApp" mnemonicParsing="false" onAction="#loginFormExitApp" prefHeight="26.0" prefWidth="57.0" text="Exit" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

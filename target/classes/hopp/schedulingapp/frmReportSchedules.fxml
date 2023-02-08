@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopp.schedulingapp.FormReportSchedules">
+   <children>
+      <GridPane prefHeight="400.0" prefWidth="933.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="274.0" minHeight="10.0" prefHeight="260.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnReportSchedules" mnemonicParsing="false" onAction="#reportSchedulesOpenMenu" text="Back to Main" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Appointment Schedules by Contact" GridPane.halignment="CENTER" />
+            <TableView fx:id="tblReportSchedules" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="colReportSchedulesContactName" editable="false" prefWidth="90.19998013973236" sortable="false" text="Cntct Name" />
+                <TableColumn fx:id="colReportSchedulesApptID" editable="false" prefWidth="67.19998931884766" sortable="false" text="Appt ID" />
+                  <TableColumn fx:id="colReportSchedulesTitle" editable="false" minWidth="0.0" prefWidth="110.0" sortable="false" text="Title" />
+                  <TableColumn fx:id="colReportSchedulesType" editable="false" prefWidth="89.79998779296875" sortable="false" text="Type" />
+                  <TableColumn fx:id="colReportSchedulesDesc" editable="false" prefWidth="106.800048828125" sortable="false" text="Desc" />
+                  <TableColumn fx:id="colReportSchedulesCustID" editable="false" prefWidth="73.99996948242188" sortable="false" text="Cust ID" />
+                  <TableColumn fx:id="colReportSchedulesCustName" editable="false" prefWidth="105.99993896484375" sortable="false" text="Cust Name" />
+                  <TableColumn fx:id="colReportSchedulesStart" editable="false" prefWidth="131.5999755859375" sortable="false" text="Start" />
+                  <TableColumn fx:id="colReportSchedulesEnd" prefWidth="158.800048828125" text="End" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="cboReportSchedulesContactName" onAction="#reportSchedulesRefreshTbl" prefWidth="150.0" promptText="Select Contact" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

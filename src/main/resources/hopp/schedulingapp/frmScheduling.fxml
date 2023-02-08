@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1442.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopp.schedulingapp.FormScheduling">
+   <children>
+      <GridPane prefHeight="570.0" prefWidth="1442.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Scheduling" GridPane.columnIndex="1"/>
+            <Label text="Appointment ID" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Title" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Description" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Location" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Contact" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Type" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Start Date" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="End Date" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Customer" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="User" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="End Time" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="14.0" />
+               </GridPane.margin></Label>
+            <Label text="Start Time" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <TextField fx:id="txtSchedulingApptID" disable="true" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtSchedulingTitle" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtSchedulingDesc" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtSchedulingLocation" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtSchedulingType" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="cboSchedulingContact" prefWidth="150.0" promptText="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="cboSchedulingCustID" prefWidth="150.0" promptText="-" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <ComboBox fx:id="cboSchedulingUserID" prefWidth="150.0" promptText="-" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <DatePicker fx:id="dpkSchedulingStartDate" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <DatePicker fx:id="dpkSchedulingEndDate" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="cboSchedulingStartTime" prefHeight="26.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+            <ComboBox fx:id="cboSchedulingEndTime" prefHeight="26.0" prefWidth="88.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+            <TableView fx:id="tblSchedules" onMouseClicked="#populateSchedFieldsWthTblSlctn" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" GridPane.rowSpan="4">
+              <columns>
+                <TableColumn fx:id="colSchedulesApptID" editable="false" prefWidth="75.0" sortable="false" text="Appt ID" />
+                <TableColumn fx:id="colSchedulesTitle" editable="false" prefWidth="75.0" sortable="false" text="Title" />
+                  <TableColumn fx:id="colSchedulesDesc" editable="false" prefWidth="75.0" sortable="false" text="Desc" />
+                  <TableColumn fx:id="colSchedulesLocation" editable="false" prefWidth="75.0" sortable="false" text="Location" />
+                  <TableColumn fx:id="colSchedulesContact" editable="false" prefWidth="75.0" sortable="false" text="Contact" />
+                  <TableColumn fx:id="colSchedulesType" editable="false" prefWidth="75.0" sortable="false" text="Type" />
+                  <TableColumn fx:id="colSchedulesStartDate" editable="false" prefWidth="164.0" sortable="false" text="Start" />
+<!--                  <TableColumn fx:id="colSchedulesStartTime" editable="false" prefWidth="75.0" sortable="false" text="Start Time" />-->
+                  <TableColumn fx:id="colSchedulesEndDate" editable="false" minWidth="0.0" prefWidth="162.0" sortable="false" text="End" />
+<!--                  <TableColumn fx:id="colSchedulesEndTime" editable="false" prefWidth="75.0" sortable="false" text="End Time" />-->
+                  <TableColumn fx:id="colSchedulesCustID" editable="false" prefWidth="46.0" sortable="false" text="Cust ID" />
+                  <TableColumn fx:id="colSchedulesCustName" editable="false" prefWidth="84.0" sortable="false" text="Cust Name" />
+                  <TableColumn fx:id="colSchedulesUserID" editable="false" prefWidth="54.0" sortable="false" text="User ID" />
+                  <TableColumn fx:id="colSchedulesUserName" editable="false" prefWidth="76.0" sortable="false" text="User Name" />
+              </columns>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </TableView>
+            <Button fx:id="btnSchedulingDelete" mnemonicParsing="false" onAction="#deleteSchedule" text="Delete" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="btnSchedulingAdd" mnemonicParsing="false" onAction="#addSchedule" prefHeight="26.0" prefWidth="64.0" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Button fx:id="btnSchedulingUpdate" mnemonicParsing="false" onAction="#updateSchedule" text="Update" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <RadioButton fx:id="rdoSchedulingByWeek" mnemonicParsing="false" onAction="#toggleTblToWeek" text="Current Week" GridPane.columnIndex="4">
+               <toggleGroup>
+                  <ToggleGroup fx:id="apptReptFilter" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rdoSchedulingByMonth" mnemonicParsing="false" onAction="#toggleTblToMonth" text="Current Month" toggleGroup="$apptReptFilter" GridPane.columnIndex="5" />
+            <Button fx:id="btnSchedulingMenu" mnemonicParsing="false" onAction="#schedulingOpenMenu" prefHeight="47.0" prefWidth="154.0" text="Back to Main" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+            <RadioButton fx:id="rdoSchedulingByAll" mnemonicParsing="false" onAction="#toggleTblToAll" selected="true" text="All" toggleGroup="$apptReptFilter" GridPane.columnIndex="3" />
+            <Label fx:id="lblSchedulingMessage" prefHeight="18.0" prefWidth="596.0" text="" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
